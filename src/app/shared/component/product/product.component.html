@@ -1,0 +1,31 @@
+
+
+<ul class="list-group">
+    <li 
+    *ngFor="let list of LangArr; let i = index"
+    class="list-goup-item">
+       {{i + 1}} I love {{list}}
+    </li>
+</ul>
+
+<hr>
+<div class="row">
+        <table class="table table-bordered">
+            <thead>
+                <th>Sr no</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of EmployeArr; let i = index">
+                    <td>{{i + 1}}</td>
+                    <td>{{emp.fname}}</td>
+                    <td>{{emp.lname}}</td>
+                    <td>{{emp.email}}</td>
+                    <td>{{emp.contact}}</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
